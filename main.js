@@ -20,7 +20,7 @@ const weather = {
 displayWeather(){
 iconElement.innerHTML = '<img src=icons/${weather.iconId}.png"/>';
 
-tempElement.innerHTML = '${weather.temperature.value}'<span>F</span>'
+tempElement.innerHTML = '${weather.temperature.value}'<span>F</span>;
 
 descElement.innerHTML  = weather.description;
 

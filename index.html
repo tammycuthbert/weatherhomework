@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title> Weather App Javascript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="font/Rimouski.css">
     <link rel="stylesheet" href="style.css">
 
@@ -9,17 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-<div class="container">
-    <div class="app-title"></div><p>Weather</p></body></p></div>
-    <div class="notification"></div>
-    <div class="weather-container">
-    <div class="weather-icon"><img src="icons/unknown.png"></div>
-    <div class="temperature-value"><p-<span>F</span>span><p></p>div></p></span></div>
-    <div class="temperaturre-description"><p> -</p></div>
-    <div class="location"><p></p></div>
 
+<body>
+<header>Weather Dashboard</header>
+<div class="container">
+    <div class="row">
+        <div class="col-4" id="sidebar">
+            <form>
+                <input id="city" type="text">
+                <button>Search</button>
+            </form>
+            <div class="container p-4">
+                <ul id="cityList">
+                    <li>Nashville</li>
+                    <li>Murfreesboro</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-8" id="weather">Weather will go here</div>
+    </div>
 </div>
-<script src="app.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

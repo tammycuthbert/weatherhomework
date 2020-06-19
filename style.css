@@ -1,0 +1,15 @@
+header {
+    padding: 25px;
+    background-color: aqua;
+    
+}
+
+#sidebar{
+    padding: 25px;
+    background-color: blueviolet;
+}
+
+#weather{
+    padding: 50px;
+    background-color: chartreuse;
+}

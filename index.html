@@ -1,35 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title> Weather App Javascript</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="font/Rimouski.css">
-    <link rel="stylesheet" href="style.css">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="script.js"></script>
 </head>
+<body>        
+        <nav class="navbar navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"><h2>Weather Dashboard</h2></a>
+        </nav>
 
-<body>
-<header>Weather Dashboard</header>
-<div class="container">
-    <div class="row">
-        <div class="col-4" id="sidebar">
-            <form>
-                <input id="city" type="text">
-                <button>Search</button>
-            </form>
-            <div class="container p-4">
-                <ul id="cityList">
-                    <li>Nashville</li>
-                    <li>Murfreesboro</li>
-                </ul>
+        <div class="row">
+          
+          <div class="column left" style="background-color:#bbb">
+            
+            <div class="form-group">
+              <h2 id="search-title">Search for a City:</h2>
+
+              <div id ="search-input" class="search">
+                <input id="city-input" class="form-control form-control-lg" type="text" placeholder="Search city">
+                <button type="button" onclick="searchCity()" class="btn btn-lg btn-primary"><i class="fas fa-search"></i></button>
+              </div>
+
             </div>
-        </div>
-        <div class="col-8" id="weather">Weather will go here</div>
-    </div>
-</div>
-<script src="main.js"></script>
+
+            <div id="history">
+              <!-- This is where the search search-history will be -->
+            </div>
+
+          </div>
+
+          <div class="column right" style="background-color: tan;">
+            
+            <div id="row-1" class="row">
+
+              <div id="weather-output">
+                <div class="card-deck mb-3">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-header">
+                        <h3 id="city-name" class="my-0 font-weight-normal mr-2">City</h3>
+                        <h3 id="tod-date" class="my-0 font-weight-normal"></h3>
+                        <img id="img-container" src="" alt="">
+                      </div>
+                      <div class="card-body">
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>Temperature: <span id="temperature">--</span>°F</li> <br>
+                          <li>Humidity: <span id="humidity">--</span>%</li> <br>
+                          <li>Wind Speed: <span id="wind-speed">--</span> MPH</li> <br>
+                          <li>UV Index: <span id="uv-index">---</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div> 
+              </div>
+
+            </div>
+            
+            <div class="container" id="row-2">
+              <div class="row">
+                <h3>5-Day Forecast:</h3>
+              </div>
+              <div class="flex-box-container">
+                <!-- This is where the Five day weather forecast cards are placed-->
+                <div id="card1">
+                  <!-- Forecast for day 1 comes here -->
+                </div>
+                <div id="card2">
+                  <!-- Forecast for day 2 comes here -->
+                </div>
+                <div id="card3">
+                  <!-- Forecast for day 3 comes here -->
+                </div>
+                <div id="card4">
+                  <!-- Forecast for day 4 comes here -->
+                </div>
+                <div id="card5">
+                  <!-- Forecast for day 5 comes here -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>        
 </body>
 </html>

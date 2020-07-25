@@ -1,15 +1,138 @@
-header {
-    padding: 25px;
-    background-color: aqua;
-    
+.column {
+  float: left;
+  padding: 10px;
+  height: 100vh;
 }
 
-#sidebar{
-    padding: 25px;
-    background-color: blueviolet;
+.left {
+  width: 30%;
 }
 
-#weather{
-    padding: 50px;
-    background-color: chartreuse;
+.right {
+  width: 70%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#row-1 {
+  height: 50%;
+  padding: 20px;
+}
+
+#row-2 {
+  height: 50%;
+  padding: 20px;
+}
+
+#search-title {
+  max-width: 350px;
+  margin: 20px;
+}
+
+.search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search input {
+  width: 100%;
+  font-size: 25px;
+  border: none;
+  background-color: white;
+  color: white;
+  margin-right: 15px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search i {
+  color: white;
+  font-size: 25px;
+}
+
+#weather-output {
+  width: 925px;
+}
+
+#history {
+  margin: 20px;
+}
+
+#uv-index {
+  border: none;
+  height: fit-content;
+  padding: 3px;
+  font-size: small;
+  border-radius: 20%;
+  background-color: red;
+  color: white;
+}
+
+.card-header {
+  display: flex;
+  background-color: antiquewhite;
+  align-items: center;
+  padding-left: 20px;
+}
+/* Mine */
+.navbar-brand {
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#img-container {
+  height: 70px;
+  width: 70px;
+}
+
+.card-header {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.card-body {
+  margin: 0px 15px;
+  padding: 0px 15px;
+}
+
+.uv-index {
+  margin-bottom: 0px;
+}
+
+.card-title {
+  margin-top: 10px;
+}
+
+.flex-box-container {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#card-img {
+  height: 50px;
+  width: 50px;
+}
+
+#cardInfo {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+nav {
+  width: 100vw;
 }

@@ -1,4 +1,4 @@
-This is a weather application to view the weather by city to see current weather conditions as well as the uv index and future weather.
+This is a weather application to view the weather by city to see current weather conditions as well as the uv index and future weather. <br>
 AS A traveler
 I NT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly

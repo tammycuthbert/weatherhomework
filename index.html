@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Weather App</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
-<body>        
-        <nav class="navbar navbar-dark bg-dark">
-          <a class="navbar-brand" href="#"><h2>Weather Dashboard</h2></a>
-        </nav>
 
-        <div class="row">
-          
-          <div class="column left" style="background-color:#bbb">
-            
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <h2>Weather Dashboard</h2>
+        </a>
+    </nav>
+
+    <div class="row">
+
+        <div class="column left" style="background-color:#bbb">
+
             <div class="form-group">
-              <h2 id="search-title">Search for a City:</h2>
+                <h2 id="search-title">Search for a City:</h2>
 
-              <div id ="search-input" class="search">
-                <input id="city-input" class="form-control form-control-lg" type="text" placeholder="Search city">
-                <button type="button" onclick="searchCity()" class="btn btn-lg btn-primary"><i class="fas fa-search"></i></button>
-              </div>
+                <div id="search-input" class="search">
+                    <input id="city-input" class="form-control form-control-lg" type="text" placeholder="Search city">
+                    <button type="button" onclick="searchCity()" class="btn btn-lg btn-primary"><i class="fas fa-search"></i></button>
+                </div>
 
             </div>
 
             <div id="history">
-              <!-- This is where the search search-history will be -->
+                <!-- This is where the search search-history will be -->
             </div>
 
-          </div>
+        </div>
 
-          <div class="column right" style="background-color: tan;">
-            
+        <div class="column right" style="background-color: tan;">
+
             <div id="row-1" class="row">
 
-              <div id="weather-output">
-                <div class="card-deck mb-3">
-                    <div class="card mb-4 shadow-sm">
-                      <div class="card-header">
-                        <h3 id="city-name" class="my-0 font-weight-normal mr-2">City</h3>
-                        <h3 id="tod-date" class="my-0 font-weight-normal"></h3>
-                        <img id="img-container" src="" alt="">
-                      </div>
-                      <div class="card-body">
-                        <ul class="list-unstyled mt-3 mb-4">
-                          <li>Temperature: <span id="temperature">--</span>°F</li> <br>
-                          <li>Humidity: <span id="humidity">--</span>%</li> <br>
-                          <li>Wind Speed: <span id="wind-speed">--</span> MPH</li> <br>
-                          <li>UV Index: <span id="uv-index">---</span></li>
-                        </ul>
-                      </div>
+                <div id="weather-output">
+                    <div class="card-deck mb-3">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h3 id="city-name" class="my-0 font-weight-normal mr-2">City</h3>
+                                <h3 id="tod-date" class="my-0 font-weight-normal"></h3>
+                                <img id="img-container" src="" alt="">
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Temperature: <span id="temperature">--</span>°F</li> <br>
+                                    <li>Humidity: <span id="humidity">--</span>%</li> <br>
+                                    <li>Wind Speed: <span id="wind-speed">--</span> MPH</li> <br>
+                                    <li>UV Index: <span id="uv-index">---</span></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div> 
-              </div>
+                </div>
 
             </div>
-            
+
             <div class="container" id="row-2">
-              <div class="row">
-                <h3>5-Day Forecast:</h3>
-              </div>
-              <div class="flex-box-container">
-                <!-- This is where the Five day weather forecast cards are placed-->
-                <div id="card1">
-                  <!-- Forecast for day 1 comes here -->
+                <div class="row">
+                    <h3>5-Day Forecast:</h3>
                 </div>
-                <div id="card2">
-                  <!-- Forecast for day 2 comes here -->
+                <div class="flex-box-container">
+                    <!-- This is where the Five day weather forecast cards are placed-->
+                    <div id="card1">
+                        <!-- Forecast for day 1 comes here -->
+                    </div>
+                    <div id="card2">
+                        <!-- Forecast for day 2 comes here -->
+                    </div>
+                    <div id="card3">
+                        <!-- Forecast for day 3 comes here -->
+                    </div>
+                    <div id="card4">
+                        <!-- Forecast for day 4 comes here -->
+                    </div>
+                    <div id="card5">
+                        <!-- Forecast for day 5 comes here -->
+                    </div>
                 </div>
-                <div id="card3">
-                  <!-- Forecast for day 3 comes here -->
-                </div>
-                <div id="card4">
-                  <!-- Forecast for day 4 comes here -->
-                </div>
-                <div id="card5">
-                  <!-- Forecast for day 5 comes here -->
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
 
-        </div>        
+    </div>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="assets/script.js"></script>
 </body>
+
 </html>
